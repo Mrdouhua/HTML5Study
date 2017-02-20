@@ -51,7 +51,6 @@ function saveStorage(id){
 	localStorage.setItem("message",str);
 	// localStorage.message = str;
 }
-
 function loadStorage(id){
 	var target = document.getElementById(id);
 	var msg = localStorage.getItem("message");
@@ -91,7 +90,6 @@ function saveStorage(id){
 	alert("数据已经保存!");
 	loadStorage('msg');
 }
-
 function loadStorage(id){
 	var result = '<table border = "1">';
 	for(var i = 0;i < localStorage.length;i++){
@@ -106,7 +104,6 @@ function loadStorage(id){
 	var target = document.getElementById(id);
 	target.innerHTML = result;
 }
-
 function clearStorage(){
 	localStorage.clear();
 	alert("全部数据被清除!");
@@ -173,7 +170,6 @@ function saveStorage(){
 	localStorage.setItem(data.name,str);
 	alert("数据已经保存!");
 }
-
 function findStorage(id){
 	var find = document.getElementById('find').value;
 	var str = localStorage.getItem(find);
